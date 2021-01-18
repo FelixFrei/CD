@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apachefre
+  name: argoapachefre
 spec:
   selector:
     matchLabels:
-      app: apachefre
+      app: argoapachefre
       tier: backend
       track: stable
-  replicas: 1
+  replicas: 2
   template:
     metadata:
-      name: apachefre
+      name: argoapachefre
       labels:
-        app: apachefre
+        app: argoapachefre
         tier: backend
         track: stable
     spec:
